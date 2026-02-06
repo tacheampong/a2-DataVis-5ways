@@ -1,0 +1,41 @@
+h1 {
+    text-align: center;
+}
+html, body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+#chart-section {
+    display: flex;
+    gap: 20%;
+    justify-content: center;
+}
+svg {
+    border: solid 1px rgb(45, 170, 82);
+    align-self: center;
+}
+.legend {
+    order:1;
+    padding: 20px;
+    border: solid 1px black;
+    height: fit-content;
+    align-self: flex-end;
+}
+#tooltip {
+  position: absolute;
+  width: 100px;
+  padding: 10px;
+  background-color: #3d3b3b;
+  color: #fff;
+  font-size: 13px;
+  border-radius: 5px;
+  z-index: 10;
+}
+
+.hidden {
+  visibility:hidden;
+}
