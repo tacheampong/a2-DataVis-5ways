@@ -16,13 +16,12 @@ The language used to create this visualization was R and the library used was th
 The language used to create this visualization Javascript and the library was d3. With the help of assignment A1, the visualization of the scatterplot was quite helpful. Because my A1 assignment had scatterplot functionality I refactored to fit the use case of this assignment. The biggest challenge with working with d3 was understanding how to deal with loading the csv file and dealing with displaying data asychrounosly. To fix the issue of a pending Promise I first defined an async function to load the data using d3.csv(). Then I call the fetchData() method and attach a callback method to resolve the Promise using the 
 .then() method. This allowed me to access the dataset (penglings.csv) before the promsise completed and could no longer access the dataset. Modifying the <circle>(S) to closely align with the example was a quite simple process that included editing the attributes of all circles.
 
-<ADD_IMAGE_HERE>
 ![d3](image.png) 
 # Python + matplotlib
 
 The language used to create this visualization was Python and the library was matplotlib. I was quite familar with matplotlib because of coursework in data science. Getting started with the use the matplots scatter() method was a simple process. Though not a requirement of the assignment, implementing the legend was a simple process that required first looking through the matplotlib documentation to understand the paramters of the legend() method. The biggest challenge cample when trying to alter the size of the the points using the bill_length_mm parameter. Passing in the bill_length_mm values on its own caused incredibly large points that were overlapping. D3 and ggplts ability to size accordingly was lot more easier to figure compared to matplot. I decided to normalize the values to ensure that each point was comparable and could be noticably differnet from one another.
 
-![MatPlotlib](Python/matplot_v.png)
+![MatplotLib](image-1.png)
 
 # Excel
 
